@@ -3,7 +3,9 @@
 
 A circular representation of the multiplication table.
 
-
+Interface            
+:-------------------------:
+![](Interface.png)    
 
 
 ## Build With
@@ -36,9 +38,9 @@ Gif #1                     |  Gif #2
 Features                   |  Usage 
 :-------------------------:|:-------------------------:
 ![](https://...Dark.png)   |  Preview of the cardioid
-![](https://...Dark.png)   |  Speed slider, -100 go backward, 100 forward
-![](https://...Dark.png)   |  Add 1, 10 or substract 1,10 ; Round down the nearest int
-![](https://...Dark.png)   |  Add Preview in the saved images list
-![](https://...Dark.png)   |  You can download the preview un JPG or delete them from the list
+![](SpeedSlider.png)   |  Speed slider, -100 go backward, 100 forward
+![](OffsetFactor.png)   |  Add 1, 10 or substract 1,10 ; Round down the nearest int
+![](PausePlay.png)   |  Go backward smoothly, pause/play, fo forward smoothmy and add Preview to the saved images list
+![](SavedImage.png)   |  You can download the preview un JPG or delete them from the list
 ![](https://...Dark.png)   |  Use to change the number of point on the cardioid
  
