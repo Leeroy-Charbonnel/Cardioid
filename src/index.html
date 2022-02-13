@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <div class="canvasWrap">
+        <canvas id="canvasPoint"></canvas>
+        <canvas id="canvas"></canvas>
+
+
+
+        <div class="factorControl">
+            <ul>
+                <li class="factorControlOffset" onclick="factorControl('-10')">
+                    <p>-10</p>
+                </li>
+                <li class="factorControlOffset" onclick="factorControl('-1')">
+                    <p>-1</p>
+                </li>
+                <li>
+                    <div id="multiplier"></div>
+                </li>
+                <li class="factorControlOffset" onclick="factorControl('1')">
+                    <p>+1</p>
+                </li>
+                <li class="factorControlOffset" onclick="factorControl('10')">
+                    <p>+10</p>
+                </li>
+            </ul>
+        </div>
+
+        <ul class='speedSlider'>
+            <li>
+                <p>Speed</p>
+            </li>
+            <li>
+                <div id="speedSlider" class="slider">
+            </li>
+            <nav>
+                <li id="minSpeed" style="left: 10px;position: absolute;"></li>
+                <li style="position: absolute;left: 50%;transform: translate(-117%);">0</li>
+                <li id="maxSpeed" style="right: 10px;position: absolute;"></li>
+
+            </nav>
+        </ul>
+
+        <div class="controls">
+            <i class="fa fa-backward icons" id="button_backward" onmousedown="controlDown('backward')" onmouseup="controlUp('backward')"></i>
+            <i class="fa fa-pause icons" id="button_pause" onclick="togglePlay()"></i>
+            <i class="fa fa-play icons" id="button_play" onclick="togglePlay()"></i>
+            <i class="fa fa-forward icons" id="button_forward" onmousedown="controlDown('forward')" onmouseup="controlUp('forward')"></i>
+
+        </div>
+        <i id="saveButton" class="fa fa-save icons" id="button_pause" onclick="saveImageToList()"></i>
+
+        </div>
+
+
+
+
+
+        <ol id="savedImageList">
+            <p class="savedImage">Saved Images</p>
+        </ol>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+        <script type="text/javascript" src='js/Librairie/jquery-3.3.1.min.js'></script>
+        <script type="text/javascript" src='js/Librairie/jquery-ui.min.js'></script>
+        <script type="text/javascript" src='js/utils.js'></script>
+        <script type="text/javascript" src='js/cardioid.js'></script>
+
+</body>
+
+</html>

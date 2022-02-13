@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    background: #393939;
+    overflow: hidden;
+    user-select: none;
+}
+
+canvas {
+    width: 100%;
+}
+
+canvas#canvas_water {
+    position: absolute;
+    top: 265px;
+    z-index: -1;
+    left: 0;
+    transform: scaleY(-1);
+    clip-path: inset(21% 0px 164px 0px);
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: -webkit-linear-gradient(45deg, #edd72f 0%, #1faec1 21%, #cb28d3 40%, #ff3030 57%, #e56e24 75%, #e2d700 100%);
+}
+
+.speedSlider {
+    width: 90%;
+    margin: 0 0px 0px 5%;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+#multiplier {
+    color: white;
+    margin: auto;
+    margin: 18px 0px 0px 0px;
+}
+
+.canvasWrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    display: grid;
+    text-align: center;
+    min-width: 408px;
+}
+
+.speedSlider li:first-child {
+    text-align: center;
+    color: white;
+}
+
+html {
+    font-family: comfortaa;
+}
+
+.ui-widget.ui-widget-content {
+    border: none !important;
+}
+
+.ui-widget-content {
+    border: none !important;
+    background: #666 !important;
+    color: #333 !important;
+}
+
+.ui-widget-header {
+    border: none !important;
+    background: #525252 !important;
+    font-weight: bold !important;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: none !important;
+    background: #adadad !important;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.5em !important;
+    margin-left: -0.6em;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.3em;
+    margin-left: -0.6em;
+    width: 8px !important;
+    height: 30px !important;
+}
+
+.icons {
+    font-size: 37px !important;
+    color: #ff000000;
+    -webkit-text-stroke: 1px rgba(245, 213, 149, 1);
+}
+
+#savedImageList {
+    position: absolute;
+    padding: 38px 0px 0px 0px;
+    right: 0px;
+    top: 130px;
+    border-left: 3px solid #f5c795;
+    border-top: 3px solid #f5c795;
+    width: 18%;
+    height: calc(96% - 130px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style: none;
+    margin: 0;
+}
+
+#savedImageList li img {
+    width: 79%;
+    position: relative;
+    padding: 10% 10% 0% 10%;
+}
+
+#savedImageList li {
+    border-bottom: 2px dashed #d09282;
+    width: 100%;
+    margin-left: 0%;
+    padding-bottom: 6px;
+}
+
+i.fa.fa-download.icons,
+i.fa.fa-trash.icons {
+    margin-left: 6px;
+    font-size: 34px !important;
+}
+
+.icons:hover {
+    cursor: pointer;
+    -webkit-text-stroke: 1px #d09282;
+}
+
+p.savedImage {
+    z-index: 2;
+    width: 10%;
+    position: fixed;
+    color: white;
+    margin-left: 0px;
+    margin-top: -38px;
+    background: #2d2d2dcc;
+    padding: 13px;
+}
+
+i.fa.fa-trash.icons {
+    position: absolute;
+    right: 5px;
+}
+
+.controls {
+    padding: 58px;
+}
+
+.controls i {
+    padding: 0px 17px;
+}
+
+.speedSlider nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    margin-top: 13px;
+}
+
+i#saveButton {
+    position: absolute;
+    right: 65px;
+    bottom: 57px;
+}
+
+.factorControl ul {
+    display: inline-flex;
+}
+
+.factorControl ul li {
+    margin: 0px 5px;
+    color: white;
+    position: relative;
+}
+
+li.factorControlOffset {
+    background: #393939;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid#e9cb92;
+}
+
+.factorControl ul li p {
+    position: relative;
+    bottom: 2px;
+}
+
+.factorControl ul li:hover {
+    cursor: pointer;
+    background: #242424;
+}
+
+canvas#canvasPoint {
+    position: absolute;
+}
