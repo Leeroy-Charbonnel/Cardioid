@@ -5,7 +5,7 @@ A circular representation of the multiplication table.
 
 Interface            
 :-------------------------:
-![](Interface.png)    
+![](Images/Interface.png)    
 
 
 ## Build With
@@ -38,9 +38,8 @@ Gif #1                     |  Gif #2
 Features                   |  Usage 
 :-------------------------:|:-------------------------:
 ![](https://...Dark.png)   |  Preview of the cardioid
-![](SpeedSlider.png)   |  Speed slider, -100 go backward, 100 forward
-![](OffsetFactor.png)   |  Add 1, 10 or substract 1,10 ; Round down the nearest int
-![](PausePlay.png)   |  Go backward smoothly, pause/play, fo forward smoothmy and add Preview to the saved images list
-![](SavedImage.png)   |  You can download the preview un JPG or delete them from the list
-![](https://...Dark.png)   |  Use to change the number of point on the cardioid
+![](Images/SpeedSlider.png)   |  Speed slider, -100 go backward, 100 forward
+![](Images/OffsetFactor.png)   |  Add 1, 10 or substract 1,10 ; Round down the nearest int
+![](Images/PausePlay.png)   |  Go backward smoothly, pause/play, fo forward smoothmy and add Preview to the saved images list
+![](Images/DownloadDelete.png)   |  You can download the preview un JPG or delete them from the list
  
